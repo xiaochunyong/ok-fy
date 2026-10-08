@@ -1,0 +1,12 @@
+[tools]
+python = "3.14.7"
+uv = "latest"
+
+[tasks.setupQt]
+run = "uv sync --extra qt"
+
+[tasks.setupWeb]
+run = "uv sync --extra web"
+
+[tasks.ui]
+run = "uv run python main_debug.py"
